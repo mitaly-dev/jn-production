@@ -20,6 +20,7 @@
               clifford: "#da373d",
               black1: "#131313",
               yellow: "#FECC02",
+              bgSection: "#4E4E4E",
             },
             fontFamily: {
               bebas: ["Bebas Neue", "cursive"],
@@ -34,14 +35,24 @@
     <header>
       <!-- navbar section start -->
       <nav
-        class="px-10 md:px-25 lg:px-32 h-20 flex justify-between items-center"
+        class="px-5 md:px-20 lg:px-32 h-20 flex justify-between items-center"
       >
         <div class="logo">
           <h2 class="font-bebas text-4xl text-black1">JN Production</h2>
         </div>
-        <div class="menu">
+        <div class="menu hidden sm:block">
           <ul
             class="uppercase text-black1 flex gap-6 font-semibold font-bebas tracking-wider text-lg"
+          >
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our movies</a></li>
+            <li><a href="#">services</a></li>
+          </ul>
+        </div>
+        <div class="menu2 sm:hidden group">
+          <img src="images/menu-2 1.svg" alt="" />
+          <ul
+            class="uppercase text-black1 gap-6 font-semibold font-bebas tracking-wider text-lg bg-yellow rounded-md p-5 w-3/6 h-80 leading-10 absolute right-6 invisible group-hover:visible"
           >
             <li><a href="#">about us</a></li>
             <li><a href="#">our movies</a></li>
@@ -57,7 +68,7 @@
       >
         <div class="px-5 md:px-12 lg:px-20">
           <p class="font-bebas text-lg text-white">Movie production studio</p>
-          <h1 class="font-bebas text-7xl text-white flex flex-col">
+          <h1 class="font-bebas text-6xl sm:text-7xl text-white flex flex-col">
             <span>Films MAde to</span>
             <span class="text-yellow">Perfection</span>
           </h1>
@@ -66,7 +77,7 @@
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <a
-            class="border-2 text-white py-3 px-6 font-bebas text-lg hover:bg-yellow transition hover:border-black1 hover:text-black1"
+            class="border-2 text-white py-3 px-6 font-bebas text-lg hover:bg-yellow transition hover:text-black1"
             href="#"
             >Discover More</a
           >
@@ -76,25 +87,25 @@
 
       <main>
         <!-- exprience section start -->
-        <section class="px-5 md:px-12 lg:px-20 mt-28">
+        <section class="px-5 md:px-12 lg:px-20 mt-12 sm:mt-16 md:mt-28">
           <div class="border-2 border-gray-400 p-3 md:p-10">
             <div class="exprience-content md:flex justify-between gap-14">
               <div
                 class="md:w-2/4 h-[300px] md:h-[500px] bg-[url(./images/camera-man.jpg)] bg-cover bg-center flex justify-center items-end"
               >
                 <p
-                  class="bg-white shadow p-3 rounded shadow-md -mb-6 w-3/4 text-center font-bebas text-3xl"
+                  class="bg-white shadow p-3 rounded shadow-md -mb-8 w-3/4 text-center font-bebas text-3xl"
                 >
                   23 YEARS of EXPERIENCE
                 </p>
               </div>
-              <div class="md:w-2/4 text-black1">
+              <div class="md:w-2/4 text-black1 mt-16 md:mt-0">
                 <h3 class="font-bebas">ABOUT US</h3>
-                <h2 class="text-5xl md:text-7xl font-bebas">
+                <h2 class="text-5xl lg:text-7xl font-bebas">
                   <p>FIlming Experience</p>
                   <p>Just Got better</p>
                 </h2>
-                <p class="mb-14 font-montserrat leading-5">
+                <p class="mb-14 font-montserrat leading-6">
                   Primis lobortis adipiscing imperdiet dis ultricies. Id commodo
                   interdum fermentum pede dictumst ipsum. Erat sapien phasellus
                   suspendisse natoque nulla leo ornare mi. Pretium rhoncus
@@ -109,7 +120,9 @@
               </div>
             </div>
             <!-- exprience details -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 mt-28 gap-12">
+            <div
+              class="grid sm:grid-cols-2 lg:grid-cols-3 mt-16 md:mt-28 gap-12"
+            >
               <div>
                 <h3 class="text-5xl font-bebas border-t-4 pt-5 border-black1">
                   OUR VISION
@@ -144,8 +157,200 @@
           </div>
         </section>
         <!-- exprience section end -->
+
+        <!-- movie collection section start -->
+        <section
+          class="px-5 md:px-12 lg:px-20 mt-12 sm:mt-16 md:mt-28 bg-bgSection py-10"
+        >
+          <div
+            class="movie-title text-white sm:flex justify-between items-center"
+          >
+            <div>
+              <h3 class="font-bebas">OUR MOVIES</h3>
+              <h2 class="text-5xl lg:text-7xl font-bebas">Movie collection</h2>
+            </div>
+            <div class="mt-10 sm:mt-0">
+              <a
+                class="border-2 py-3 px-6 font-bebas text-lg hover:bg-yellow transition border-white hover:text-black1"
+                href="#"
+                >Discover More</a
+              >
+            </div>
+          </div>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-14"
+          >
+            <div class="single-movie border-2 border-white">
+              <img class="w-full h-full p-4" src="images/tenet.jpg" alt="" />
+            </div>
+            <div class="single-movie border-2 border-white">
+              <img
+                class="w-full h-full p-4"
+                src="images/inception.jpg"
+                alt=""
+              />
+            </div>
+            <div class="single-movie border-2 border-white">
+              <img
+                class="w-full h-full p-4"
+                src="images/interstellar.jpg"
+                alt=""
+              />
+            </div>
+            <div class="single-movie border-2 border-white">
+              <img
+                class="w-full h-full p-4"
+                src="images/fractured.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <!-- movie collection section end -->
+
+        <!-- offer section start -->
+        <section class="px-5 md:px-12 lg:px-20 mt-12 sm:mt-16 md:mt-28">
+          <div class="text-center">
+            <h3 class="font-bebas">services</h3>
+            <h2 class="text-5xl lg:text-7xl font-bebas">what we offer</h2>
+          </div>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10 lg:mt-16"
+          >
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon1.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">movies director</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon2.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">3D MOVIES</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon3.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">Film maker</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon4.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">Studio Production</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon5.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">Drama Movies</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon6.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">Rolling Production</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon7.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">Movie Production</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+            <div
+              class="single-offer border-4 text-center p-3 py-4 border-[#4E4E4E]"
+            >
+              <img
+                class="m-auto w-[70px] sm:w-4/12"
+                src="images/icons/icon8.png"
+                alt=""
+              />
+              <h4 class="font-bebas text-lg py-2">actor action</h4>
+              <p class="font-montserrat text-lg">
+                Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+                dis eget.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- offer section end -->
       </main>
     </header>
-    <!--  -->
+    <!--footer section start  -->
+    <footer
+      class="px-5 md:px-12 lg:px-20 mt-12 sm:mt-16 md:mt-28 pt-16 pb-8 bg-black1 text-white"
+    >
+      <div class="text-center">
+        <h2 class="text-5xl lg:text-7xl font-bebas">jn production</h2>
+        <h3 class="text-2xl font-bebas">next level experience</h3>
+        <p class="font-montserrat sm:w-2/4 lg:w-2/6 mx-auto mt-4">
+          Feugiat nibh litora semper proin nullam facilisi volutpat ex
+          ullamcorper.
+        </p>
+        <p class="mt-10 font-montserrat">
+          Copyright © 2022 JN Production, All rights reserved. Present Mukta
+          Akter Mitaly
+        </p>
+      </div>
+    </footer>
+    <!--footer section end  -->
   </body>
 </html>
